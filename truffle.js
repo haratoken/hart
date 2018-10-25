@@ -30,5 +30,12 @@ module.exports = {
      enabled: true,
      runs: 200
    }
- }
+ },
+ mocha: {  
+  reporter: "spec",
+  reporter: "mocha-junit-reporter", 
+  reporterOptions: {  
+    mochaFile: "reports/testresults.xml"
+  }  
+},
 };

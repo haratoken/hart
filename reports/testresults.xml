@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="1.922" tests="25" failures="0">
+  <testsuite name="Root Suite" timestamp="2018-10-25T08:32:42" tests="0" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Contract: HaraToken" timestamp="2018-10-25T08:32:42" tests="7" file="/code/test/HaraToken.test.js" failures="0" time="0.5249999999999999">
+    <testcase name="Contract: HaraToken has a name" time="0.026" classname="has a name">
+    </testcase>
+    <testcase name="Contract: HaraToken has a symbol" time="0.023" classname="has a symbol">
+    </testcase>
+    <testcase name="Contract: HaraToken has 18 decimals" time="0.015" classname="has 18 decimals">
+    </testcase>
+    <testcase name="Contract: HaraToken assigns the initial total supply to the creator" time="0.048" classname="assigns the initial total supply to the creator">
+    </testcase>
+    <testcase name="Contract: HaraToken transfer 10 token to burner" time="0.07" classname="transfer 10 token to burner">
+    </testcase>
+    <testcase name="Contract: HaraToken burn 20 token and mint the same amount for account[0]" time="0.165" classname="burn 20 token and mint the same amount for account[0]">
+    </testcase>
+    <testcase name="Contract: HaraToken minted by minter instead of creator" time="0.178" classname="minted by minter instead of creator">
+    </testcase>
+  </testsuite>
+  <testsuite name="Contract: HaraTokenPrivate" timestamp="2018-10-25T08:32:43" tests="5" file="/code/test/HaraTokenPrivate.test.js" failures="0" time="0.101">
+    <testcase name="Contract: HaraTokenPrivate has a name" time="0.017" classname="has a name">
+    </testcase>
+    <testcase name="Contract: HaraTokenPrivate has a symbol" time="0.016" classname="has a symbol">
+    </testcase>
+    <testcase name="Contract: HaraTokenPrivate has 18 decimals" time="0.016" classname="has 18 decimals">
+    </testcase>
+    <testcase name="Contract: HaraTokenPrivate has HART Network ID" time="0.021" classname="has HART Network ID">
+    </testcase>
+    <testcase name="Contract: HaraTokenPrivate assigns the initial total supply to the creator" time="0.031" classname="assigns the initial total supply to the creator">
+    </testcase>
+  </testsuite>
+  <testsuite name="contract is mintable and burnable" timestamp="2018-10-25T08:32:43" tests="4" file="/code/test/HaraTokenPrivate.test.js" failures="0" time="0.5630000000000001">
+    <testcase name="Contract: HaraTokenPrivate contract is mintable and burnable transfer 10 token to burner" time="0.056" classname="transfer 10 token to burner">
+    </testcase>
+    <testcase name="Contract: HaraTokenPrivate contract is mintable and burnable burn 20 token and mint the same amount for account[0]" time="0.208" classname="burn 20 token and mint the same amount for account[0]">
+    </testcase>
+    <testcase name="Contract: HaraTokenPrivate contract is mintable and burnable minted by minter instead of creator" time="0.195" classname="minted by minter instead of creator">
+    </testcase>
+    <testcase name="Contract: HaraTokenPrivate contract is mintable and burnable failed if burn value less than transaction fee" time="0.104" classname="failed if burn value less than transaction fee">
+    </testcase>
+  </testsuite>
+  <testsuite name="contract have buy mechanism" timestamp="2018-10-25T08:32:43" tests="5" file="/code/test/HaraTokenPrivate.test.js" failures="0" time="0.501">
+    <testcase name="Contract: HaraTokenPrivate contract have buy mechanism can buy item" time="0.139" classname="can buy item">
+    </testcase>
+    <testcase name="Contract: HaraTokenPrivate contract have buy mechanism can not buy item if price underpriced" time="0.085" classname="can not buy item if price underpriced">
+    </testcase>
+    <testcase name="Contract: HaraTokenPrivate contract have buy mechanism can not buy item if buyer don&apos;t have enough token" time="0.064" classname="can not buy item if buyer don&apos;t have enough token">
+    </testcase>
+    <testcase name="Contract: HaraTokenPrivate contract have buy mechanism can not buy item if seller address is not address" time="0.049" classname="can not buy item if seller address is not address">
+    </testcase>
+    <testcase name="Contract: HaraTokenPrivate contract have buy mechanism revert token when buy failed" time="0.164" classname="revert token when buy failed">
+    </testcase>
+  </testsuite>
+  <testsuite name="have token bridge address and burn fee" timestamp="2018-10-25T08:32:44" tests="4" file="/code/test/HaraTokenPrivate.test.js" failures="0" time="0.23199999999999998">
+    <testcase name="Contract: HaraTokenPrivate have token bridge address and burn fee set transfer fee recipient by owner" time="0.057" classname="set transfer fee recipient by owner">
+    </testcase>
+    <testcase name="Contract: HaraTokenPrivate have token bridge address and burn fee can not set transfer fee recipient by not owner" time="0.065" classname="can not set transfer fee recipient by not owner">
+    </testcase>
+    <testcase name="Contract: HaraTokenPrivate have token bridge address and burn fee set transfer fee  " time="0.049" classname="set transfer fee  ">
+    </testcase>
+    <testcase name="Contract: HaraTokenPrivate have token bridge address and burn fee can not set transfer fee  by not owner" time="0.061" classname="can not set transfer fee  by not owner">
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -15,3 +15,5 @@ services:
     command: bash -c "truffle test --network development"
     depends_on:
     - ganache
+    volumes:
+    - ./reports:/code/reports
