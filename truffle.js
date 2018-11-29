@@ -7,8 +7,6 @@ require('babel-register')({
 require('babel-polyfill');
 
 module.exports = {
-  // See <http://truffleframework.com/docs/advanced/configuration>
-  // to customize your Truffle configuration!
   networks: {
     development: {
       host: process.env.DEVELOPMENT_HOST,
@@ -20,7 +18,7 @@ module.exports = {
       provider: function() { 
                return new HDWalletProvider(mnemonic, process.env.RINKEBY_HOST) 
              },
-      network_id: 4, // Match any network id
+      network_id: 4,
       gas: 4700000,
       from: process.env.ADDRESS
     },
@@ -30,5 +28,12 @@ module.exports = {
      enabled: true,
      runs: 200
    }
- }
+ },
+ mocha: {  
+  reporter: "spec",
+  reporter: "mocha-junit-reporter", 
+  reporterOptions: {  
+    mochaFile: "reports/testresults.xml"
+  }  
+},
 };
